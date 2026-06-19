@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adriel Guimarães | Especialista em Forros de PVC em Itajaí e Navegantes</title>
+
+    <meta name="description" content="Venda, instalação rápida e manutenção de forros residenciais e comerciais com acabamento premium por Adriel Guimarães. Atendimento em Itajaí, Navegantes e região.">
+
+    
+
+    <!-- Google Fonts: Cinzel para Títulos Imponentes e Montserrat para Texto Técnico -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+
+    <style>
+
+        :root {
+
+            --bg-pure: #0a0a0a;
+
+            --bg-card: #121212;
+
+            --bg-hover: #1c1c1c;
+
+            --gold-primary: #D4AF37; /* Dourado Metálico Clássico */
+
+            --gold-light: #F3E5AB;
+
+            --white: #ffffff;
+
+            --text-gray: #a0a0a0;
+
+            --border-color: #262626;
+
+        }
+
+
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+
+
+        body {
+
+            background-color: var(--bg-pure);
+
+            color: var(--white);
+
+            line-height: 1.8;
+
+            overflow-x: hidden;
+
+        }
+
+
+
+        h1, h2, h3 {
+
+            font-family: 'Cinzel', serif;
+
+            color: var(--gold-primary);
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+
+        }
+
+
+
+        .container {
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            padding: 0 30px;
+
+        }
+
+
+
+        /* Hero Section Premium */
+
+        header {
+
+            min-height: 90vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            background: radial-gradient(circle at center, #1a1508 0%, var(--bg-pure) 70%);
+
+            border-bottom: 1px solid var(--border-color);
+
+            padding: 80px 0;
+
+        }
+
+
+
+        .hero-content {
+
+            max-width: 850px;
+
+        }
+
+
+
+        .hero-badge {
+
+            display: inline-block;
+
+            border: 1px solid var(--gold-primary);
+
+            color: var(--gold-primary);
+
+            padding: 5px 15px;
+
+            font-size: 0.8rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 25px;
+
+            border-radius: 50px;
+
+            font-weight: 700;
+
+        }
+
+
+
+        header h1 {
+
+            font-size: 3rem;
+
+            line-height: 1.2;
+
+            margin-bottom: 25px;
+
+            text-transform: uppercase;
+
+            font-weight: 900;
+
+        }
+
+
+
+        header p {
+
+            font-size: 1.2rem;
+
+            color: var(--text-gray);
+
+            margin-bottom: 40px;
+
+            font-weight: 300;
+
+        }
+
+
+
+        /* Botão de Ação Assinado pelo Designer */
+
+        .btn-gold {
+
+            display: inline-block;
+
+            background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
+
+            color: var(--bg-pure);
+
+            font-weight: 700;
+
+            padding: 20px 40px;
+
+            font-size: 1.1rem;
+
+            text-decoration: none;
+
+            border-radius: 4px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+            transition: all 0.3s ease;
+
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+
+        }
+
+
+
+        .btn-gold:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
+
+            filter: brightness(1.1);
+
+        }
+
+
+
+        /* Seções de Conteúdo */
+
+        section {
+
+            padding: 100px 0;
+
+            border-bottom: 1px solid var(--border-color);
+
+        }
+
+
+
+        .section-header {
+
+            text-align: center;
+
+            margin-bottom: 60px;
+
+        }
+
+
+
+        .section-header h2 {
+
+            font-size: 2.2rem;
+
+            text-transform: uppercase;
+
+            margin-bottom: 15px;
+
+        }
+
+
+
+        .section-header .divider {
+
+            width: 80px;
+
+            height: 2px;
+
+            background-color: var(--gold-primary);
+
+            margin: 0 auto;
+
+        }
+
+
+
+        /* Seção Sobre / Autoridade */
+
+        .about-wrapper {
+
+            display: grid;
+
+            grid-template-columns: 1fr;
+
+            gap: 40px;
+
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            text-align: center;
+
+        }
+
+
+
+        .about-text p {
+
+            font-size: 1.1rem;
+
+            color: var(--text-gray);
+
+            margin-bottom: 25px;
+
+            font-weight: 400;
+
+        }
+
+
+
+        .about-signature {
+
+            font-family: 'Cinzel', serif;
+
+            color: var(--gold-primary);
+
+            font-size: 1.4rem;
+
+            margin-top: 30px;
+
+            display: block;
+
+        }
+
+
+
+        /* Grid de Serviços Otimizado */
+
+        .services-layout {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+            gap: 30px;
+
+        }
+
+
+
+        .card {
+
+            background-color: var(--bg-card);
+
+            border: 1px solid var(--border-color);
+
+            padding: 40px 30px;
+
+            border-radius: 4px;
+
+            transition: all 0.3s ease;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+
+
+        .card::before {
+
+            content: '';
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            width: 4px;
+
+            height: 0;
+
+            background-color: var(--gold-primary);
+
+            transition: all 0.3s ease;
+
+        }
+
+
+
+        .card:hover {
+
+            border-color: var(--gold-primary);
+
+            background-color: var(--bg-hover);
+
+            transform: translateY(-5px);
+
+        }
+
+
+
+        .card:hover::before {
+
+            height: 100%;
+
+        }
+
+
+
+        .card h3 {
+
+            font-size: 1.4rem;
+
+            margin-bottom: 20px;
+
+            text-transform: uppercase;
+
+        }
+
+
+
+        .card p {
+
+            color: var(--text-gray);
+
+            font-size: 1rem;
+
+            font-weight: 300;
+
+        }
+
+
+
+        /* Prova Social */
+
+        .review-container {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+
+            gap: 40px;
+
+        }
+
+
+
+        @media (max-width: 768px) {
+
+            .review-container { grid-template-columns: 1fr; }
+
+        }
+
+
+
+        .review-item {
+
+            background-color: var(--bg-card);
+
+            padding: 40px;
+
+            border: 1px solid var(--border-color);
+
+            border-radius: 4px;
+
+            position: relative;
+
+        }
+
+
+
+        .review-item p {
+
+            font-style: italic;
+
+            font-size: 1.1rem;
+
+            color: var(--white);
+
+            margin-bottom: 20px;
+
+            font-weight: 300;
+
+        }
+
+
+
+        .review-author {
+
+            color: var(--gold-primary);
+
+            font-weight: 700;
+
+            font-size: 0.9rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+        }
+
+
+
+        /* FAQ Sanfonado Premium */
+
+        .faq-accordion {
+
+            max-width: 850px;
+
+            margin: 0 auto;
+
+        }
+
+
+
+        details {
+
+            background-color: var(--bg-card);
+
+            border: 1px solid var(--border-color);
+
+            margin-bottom: 20px;
+
+            border-radius: 4px;
+
+            padding: 20px 30px;
+
+            transition: border-color 0.3s ease;
+
+        }
+
+
+
+        details[open] {
+
+            border-color: var(--gold-primary);
+
+        }
+
+
+
+        summary {
+
+            font-family: 'Cinzel', serif;
+
+            font-weight: 700;
+
+            color: var(--gold-primary);
+
+            cursor: pointer;
+
+            font-size: 1.2rem;
+
+            outline: none;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+        }
+
+
+
+        details p {
+
+            margin-top: 20px;
+
+            color: var(--text-gray);
+
+            border-top: 1px solid var(--border-color);
+
+            padding-top: 20px;
+
+            font-size: 1rem;
+
+            font-weight: 300;
+
+        }
+
+
+
+        /* Footer / Rodapé Institucional */
+
+        footer {
+
+            background-color: #050505;
+
+            padding: 60px 0;
+
+            text-align: center;
+
+            border-top: 1px solid var(--border-color);
+
+        }
+
+
+
+        footer h3 {
+
+            font-size: 1.6rem;
+
+            margin-bottom: 20px;
+
+            text-transform: uppercase;
+
+        }
+
+
+
+        footer p {
+
+            color: var(--text-gray);
+
+            margin-bottom: 12px;
+
+            font-size: 1rem;
+
+            font-weight: 400;
+
+        }
+
+
+
+        footer a {
+
+            color: var(--gold-primary);
+
+            text-decoration: none;
+
+            font-weight: 700;
+
+        }
+
+
+
+        footer a:hover {
+
+            color: var(--gold-light);
+
+            text-decoration: underline;
+
+        }
+
+
+
+        /* Responsividade Avançada */
+
+        @media (max-width: 768px) {
+
+            header h1 { font-size: 2.2rem; }
+
+            .section-header h2 { font-size: 1.8rem; }
+
+            .container { padding: 0 20px; }
+
+        }
+
+    </style>
+
+
+
+    <!-- SCHEMA JSON-LD ATUALIZADO (Foco em E-E-A-T com Nome do Profissional) -->
+
+    <script type="application/ld-json">
+
+    {
+
+      "@context": "https://schema.org",
+
+      "@type": "GeneralContractor",
+
+      "name": "Rei do PVC - Forros e Instalações",
+
+      "alternateName": "Rei do pvc",
+
+      "knowsAbout": ["Forro de PVC", "Instalação de Forros", "Reforma de Teto"],
+
+      "description": "Empresa gerenciada por Adriel Guimarães, especializada no fornecimento, montagem, conserto e higienização de forros plásticos residenciais e comerciais.",
+
+      "url": "https://sites.google.com/view/rei-do-forro-pvc-itajai",
+
+      "telephone": "+55-47-99116-9719",
+
+      "priceRange": "$$",
+
+      "member": {
+
+        "@type": "OrganizationRole",
+
+        "member": {
+
+          "@type": "Person",
+
+          "name": "Adriel Guimarães"
+
+        },
+
+        "roleName": "Proprietário e Especialista Técnico"
+
+      },
+
+      "address": {
+
+        "@type": "PostalAddress",
+
+        "addressLocality": "Itajaí",
+
+        "addressRegion": "SC",
+
+        "addressCountry": "BR"
+
+      },
+
+      "geo": {
+
+        "@type": "GeoCoordinates",
+
+        "latitude": "-26.9076",
+
+        "longitude": "-48.6619"
+
+      },
+
+      "areaServed": [
+
+        {
+
+          "@type": "City",
+
+          "name": "Itajaí",
+
+          "sameAs": "https://pt.wikipedia.org/wiki/Itaja%C3%AD"
+
+        },
+
+        {
+
+          "@type": "City",
+
+          "name": "Navegantes",
+
+          "sameAs": "https://pt.wikipedia.org/wiki/Navegantes"
+
+        }
+
+      ]
+
+    }
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <!-- Hero Section -->
+
+    <header>
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <span class="hero-badge">Serviço de Alto Padrão</span>
+
+                <h1>Especialista em Forros de PVC em Itajaí e Navegantes</h1>
+
+                <p>Venda e montagem técnica de coberturas e acabamentos de teto sob a direção de Adriel Guimarães. Estruturas perfeitamente alinhadas, imunes à umidade e com durabilidade máxima.</p>
+
+                <a href="https://wa.me/5547991169719?text=Olá!%20Estava%20no%20site%20e%20gostaria%20de%20solicitar%20um%20orçamento%20com%20o%20Adriel." class="btn-gold" target="_blank">👑 Falar com Adriel Guimarães</a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Sobre / Autoridade Otimizada (Framework Mestre SEO) -->
+
+    <section id="autoridade">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2>Excelência em Acabamentos</h2>
+
+                <div class="divider"></div>
+
+            </div>
+
+            <div class="about-wrapper">
+
+                <div class="about-text">
+
+                    <p>Sob o comando de <strong>Adriel Guimarães</strong>, o Rei do PVC consolidou-se na região litorânea de Santa Catarina como a principal referência em agilidade e precisão técnica para forros plásticos residenciais e corporativos[cite: 1].</p>
+
+                    <p>Unimos o fornecimento de perfis e lâminas de PVC premium a uma montagem estrutural impecável, garantindo isolamento estético completo e proteção total contra goteiras, mofo ou proliferação de pragas[cite: 1].</p>
+
+                    <p>Nosso foco não é apenas realizar a obra, mas entregar um processo limpo, rápido e um resultado visual que valoriza o imóvel desde o primeiro dia.</p>
+
+                    <span class="about-signature">Adriel Guimarães</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Serviços (Hub de Soluções) -->
+
+    <section id="solucoes">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2>Soluções para seu Ambiente</h2>
+
+                <div class="divider"></div>
+
+            </div>
+
+            <div class="services-layout">
+
+                <div class="card">
+
+                    <h3>Instalação Completa</h3>
+
+                    <p>Desenvolvimento da estrutura de sustentação nivelada a laser, distribuição e travamento de lâminas de PVC brancas ou amadeiradas de alta densidade e instalação de molduras laterais[cite: 1].</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Manutenção de Estruturas</h3>
+
+                    <p>Substituição pontual de réguas danificadas por impactos ou vazamentos no telhado, reforço de fixações antigas e realinhamento completo de tetos com perigo de queda[cite: 1].</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Higienização Técnica</h3>
+
+                    <p>Remoção especializada de fuligem, manchas causadas por umidade, poeira de longo prazo e bolor, restaurando o brilho reflexivo original do material sem comprometer a estrutura[cite: 1].</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Depoimentos Reais -->
+
+    <section id="depoimentos">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2>Casos de Sucesso Locais</h2>
+
+                <div class="divider"></div>
+
+            </div>
+
+            <div class="review-container">
+
+                <div class="review-item">
+
+                    <p>"O serviço do Adriel Guimarães no Rei do PVC foi fantástico. Instalou o forro PVC na minha casa em Itajaí em tempo recorde, alinhamento perfeito e limpeza absoluta."</p>
+
+                    <div class="review-author">Marcos S. – Itajaí</div>
+
+                </div>
+
+                <div class="review-item">
+
+                    <p>"Extremamente profissionais. Fizeram a reforma do teto da minha loja em Navegantes. Rápido, direto e com acabamento de altíssimo padrão."</p>
+
+                    <div class="review-author">Juliana R. – Navegantes</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FAQ Estruturado -->
+
+    <section id="perguntas">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2>Dúvidas Frequentes</h2>
+
+                <div class="divider"></div>
+
+            </div>
+
+            <div class="faq-accordion">
+
+                <details>
+
+                    <summary>Qual o prazo para conclusão de uma instalação?</summary>
+
+                    <p>Na maioria dos projetos residenciais padrão (até 50m²), a equipe liderada por Adriel Guimarães finaliza toda a montagem em um único dia útil, operando com ferramentas que evitam sujeiras ou resíduos pesados no local[cite: 1].</p>
+
+                </details>
+
+                <details>
+
+                    <summary>Como funcionam os orçamentos para a região?</summary>
+
+                    <p>Realizamos a medição exata do ambiente e geramos o planejamento técnico com material e instalação inclusos de forma 100% gratuita para as cidades de Itajaí e Navegantes[cite: 1].</p>
+
+                </details>
+
+                <details>
+
+                    <summary>O PVC instalado propaga fogo ou calor?</summary>
+
+                    <p>Não. Trabalhamos exclusivamente com PVC de classificação premium autoextinguível, que não propaga chamas. O material cria uma câmara de isolamento de ar sob a telha, e pode ser reforçado com mantas térmicas caso o ambiente exija[cite: 1].</p>
+
+                </details>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Rodapé -->
+
+    <footer>
+
+        <div class="container">
+
+            <h3>Rei do PVC – Adriel Guimarães</h3>
+
+            <p>Atendimento Direto via WhatsApp: <strong>(47) 99116-9719</strong></p>
+
+            <p>Atendimento Técnico Especializado em Itajaí e Navegantes – SC[cite: 1]</p>
+
+            <p>Instagram Oficial: <a href="https://instagram.com/rei-do-forro-pvc-itajai" target="_blank">@rei-do-forro-pvc-itajai</a>[cite: 1]</p>
+
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>

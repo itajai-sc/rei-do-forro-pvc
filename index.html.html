@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rei do Forro PVC Itajaí | Adriel Guimarães</title>
+    <meta name="description" content="Venda, instalação e conserto de forros de PVC em Itajaí, Navegantes e região. Serviço limpo, rápido e com preço justo. Orçamento gratuito.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: #050505;
+            --bg-surface: #0f0f11;
+            --bg-card: #16161a;
+            --gold: #E5C158;
+            --gold-gradient: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA7C11 100%);
+            --white: #ffffff;
+            --text-muted: #9a9a12;
+            --text-light: #bcbcbc;
+            --border: rgba(255, 255, 255, 0.05);
+            --border-gold: rgba(229, 193, 88, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--white);
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 900;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Primeira Dobra Otimizada */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: radial-gradient(circle at 85% 25%, rgba(212, 175, 55, 0.07) 0%, transparent 50%),
+                        radial-gradient(circle at 15% 75%, rgba(255, 255, 255, 0.02) 0%, transparent 40%);
+            padding: 40px 0;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.25fr 0.75fr;
+            gap: 40px;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Bloco Alinhando Coroa Grande à Esquerda */
+        .title-header-wrapper {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 24px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .brand-logo {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .brand-logo-small {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+
+        .hero-main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .tag-premium {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(229, 193, 88, 0.1);
+            border: 1px solid var(--border-gold);
+            color: var(--gold);
+            padding: 4px 14px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            border-radius: 100px;
+            margin-bottom: 12px;
+        }
+
+        .hero h1 {
+            font-size: 3.6rem;
+            line-height: 1.05;
+            letter-spacing: -1px;
+            color: var(--white);
+        }
+
+        .hero h1 span {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: block;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 28px;
+            max-width: 620px;
+        }
+
+        /* Botão Chamativo */
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gold-gradient);
+            color: #000;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            padding: 16px 36px;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 24px rgba(212, 175, 55, 0.25);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(212, 175, 55, 0.45);
+            filter: brightness(1.1);
+        }
+
+        /* Card Lateral de Diferencial Real */
+        .floating-badge {
+            background: rgba(22, 22, 26, 0.8);
+            border: 1px solid var(--border);
+            padding: 32px;
+            border-radius: 12px;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+
+        .floating-badge::before {
+            content: '';
+            position: absolute;
+            top: -1px; left: -1px; right: -1px; bottom: -1px;
+            border-radius: 12px;
+            background: linear-gradient(45deg, var(--gold), transparent);
+            z-index: -1;
+            opacity: 0.2;
+        }
+
+        .floating-badge h3 {
+            color: var(--gold);
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+
+        /* Seções */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            margin-bottom: 44px;
+            max-width: 700px;
+        }
+
+        .section-title span {
+            color: var(--gold);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .section-title h2 {
+            font-size: 2.6rem;
+            letter-spacing: -0.5px;
+            line-height: 1.15;
+        }
+
+        /* Grid de Serviços */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .feature-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            padding: 36px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: var(--gold);
+            background: var(--bg-card);
+        }
+
+        .feature-icon {
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Seção Sobre */
+        .about-section {
+            background: var(--bg-surface);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        /* Estilo da Imagem na seção Sobre */
+        .about-image img {
+            width: 70%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+            object-fit: cover;
+            aspect-ratio: 4/5;
+            align-items: center;  
+        }
+
+        .about-content p {
+            color: var(--text-light);
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .stat-box {
+            border-left: 2px solid var(--gold);
+            padding-left: 16px;
+        }
+
+        .stat-box h4 {
+            font-size: 2.5rem;
+            color: var(--white);
+        }
+
+        .stat-box p {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+
+        /* Perguntas Frequentes */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            margin-bottom: 12px;
+            padding: 20px;
+        }
+
+        details[open] {
+            border-color: var(--gold);
+            background: var(--bg-card);
+        }
+
+        summary {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--white);
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        summary::after {
+            content: '+';
+            color: var(--gold);
+            font-size: 1.3rem;
+        }
+
+        details[open] summary::after {
+            content: '−';
+        }
+
+        details p {
+            margin-top: 12px;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Rodapé */
+        footer {
+            padding: 50px 0;
+            border-top: 1px solid var(--border);
+            background: #020202;
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Responsivo */
+        @media (max-width: 968px) {
+            .hero { padding: 40px 0; }
+            .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+            .title-header-wrapper { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+            .hero-main-content { align-items: center; text-align: center; }
+            .about-grid { grid-template-columns: 1fr; gap: 40px; }
+            .hero h1 { font-size: 2.8rem; }
+            .about-image { order: -1; } /* Faz a imagem ficar em cima do texto no celular */
+        }
+
+        @media (max-width: 568px) {
+            .hero h1 { font-size: 2.2rem; }
+            .section-title h2 { font-size: 1.8rem; }
+            .brand-logo { width: 110px; height: 110px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                
+                <div class="hero-main-content">
+                    
+                    <div class="title-header-wrapper">
+                        <div class="brand-logo">
+                            <svg viewBox="0 0 100 100" width="100%" height="100%">
+                                <defs>
+                                    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#F3E5AB" />
+                                        <stop offset="50%" stop-color="#D4AF37" />
+                                        <stop offset="100%" stop-color="#AA7C11" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="url(#goldGradient)" stroke-width="2.5"/>
+                                <path d="M 28 60 L 25 35 L 38 48 L 50 25 L 62 48 L 75 35 L 72 60 Z" fill="none" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linejoin="round"/>
+                                <circle cx="25" cy="33" r="2" fill="url(#goldGradient)"/>
+                                <circle cx="38" cy="46" r="2" fill="url(#goldGradient)"/>
+                                <circle cx="50" cy="23" r="2" fill="url(#goldGradient)"/>
+                                <circle cx="62" cy="46" r="2" fill="url(#goldGradient)"/>
+                                <circle cx="75" cy="33" r="2" fill="url(#goldGradient)"/>
+                                <line x1="30" y1="64" x2="70" y2="64" stroke="url(#goldGradient)" stroke-width="2"/>
+                                <line x1="32" y1="68" x2="68" y2="68" stroke="url(#goldGradient)" stroke-width="1.2"/>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <span class="tag-premium">Material e Mão de Obra Inclusos</span>
+                            <h1>Rei do Forro PVC <span>Itajaí e Região</span></h1>
+                        </div>
+                    </div>
+
+                    <p>Trabalho com venda, instalação e conserto de forro de PVC. Garanto um serviço rápido, bem alinhado e sem dor de cabeça para você.</p>
+                    
+                    <a href="https://wa.me/5547991169719?text=Olá!%20Solicito%20um%20orçamento%20técnico%20para%20forro%20de%20PVC." class="cta-button" target="_blank">Pedir Orçamento Grátis</a>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="floating-badge">
+                        <h3>O meu diferencial:</h3>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6;">"Como tenho boa experiência trabalhando com obras como pedreiro, se o seu teto estiver com alguma goteira, infiltração simples, eu mesmo já resolvo antes de colocar o forro de PVC. Você economiza e não precisa chamar outro profissional. E se for um problema estrutural mais complexo, já te passo orçamento na hora."</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section id="servicos">
+        <div class="container">
+            <div class="section-title">
+                <span>Serviço Direto</span>
+                <h2>Como posso te ajudar:</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔨</div>
+                    <h3>Instalação de Forro Novo</h3>
+                    <p>Estruturas montadas sob rigoroso nivelamento, garantindo que tudo fique perfeitamente retinho, firme e bem acabado.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛠️</div>
+                    <h3>Consertos em Geral</h3>
+                    <p>Troco réguas quebradas ou manchadas e faço o reforço de estruturas antigas ou forros que estão frouxos e correndo o risco de cair.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧹</div>
+                    <h3>Limpeza e Organização</h3>
+                    <p>Trabalho com capricho e respeito pelo seu espaço. Deixo o local totalmente limpo e recolho os restos de material depois do serviço terminado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="autoridade">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://static.wixstatic.com/media/631a82_33638ef249614be4a584e83a1e99b1be~mv2.jpg/v1/fill/w_280,h_272,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/INSTALADOR%20FORRO%20PVC.jpg" alt="Profissional instalando forro">
+                </div>
+
+                <div class="about-content">
+                    <div class="section-title" style="margin-bottom: 24px;">
+                        <span>Profissional de Confiança</span>
+                        <h2>Compromisso com o cliente e preço justo</h2>
+                    </div>
+                    
+                    <p>Meu nome é <strong>Adriel Guimarães</strong>. Atendo as cidades de Itajaí, Navegantes, Balneário Camboriú e região oferecendo um serviço sério e caprichado com forros de PVC.</p>
+                    <p>Levo materiais de boa qualidade, trabalho no prazo combinado e garanto um preço justo que cabe no seu bolso. Falou comigo, o serviço sai bem feito.</p>
+                    
+                    <div class="stats-row">
+                        <div class="stat-box">
+                            <h4>+10 Anos</h4>
+                            <p>Trabalhando na área</p>
+                        </div>
+                        <div class="stat-box">
+                            <h4>100%</h4>
+                            <p>Serviço Garantido</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <div class="section-title" style="text-align: center; margin: 0 auto 50px;">
+                <span>Dúvidas Comuns</span>
+                <h2>Perguntas Frequentes</h2>
+            </div>
+            <div class="faq-list">
+                <details>
+                    <summary>Quanto tempo demora para instalar?</summary>
+                    <p>Para a maioria das salas, quartos ou casas em tamanho normal, eu consigo terminar a montagem inteira em apenas um dia de trabalho.</p>
+                </details>
+                <details>
+                    <summary>Como funciona o orçamento?</summary>
+                    <p>Vou até o seu endereço em Itajaí, Navegantes ou região vizinha, tiro as medidas certas e te passo o valor total fechado sem cobrar nada pela visita.</p>
+                </details>
+                <details>
+                    <summary>O material é seguro?</summary>
+                    <p>Sim. Só trabalho com lâminas de PVC que não propagam fogo (autoextinguível) e que são fáceis de limpar no dia a dia.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="brand-logo-small">
+                <svg viewBox="0 0 100 100" width="100%" height="100%">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#goldGradient)" stroke-width="2.5" style="opacity: 0.4;"/>
+                    <path d="M 28 60 L 25 35 L 38 48 L 50 25 L 62 48 L 75 35 L 72 60 Z" fill="none" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linejoin="round"/>
+                    <circle cx="25" cy="33" r="2" fill="url(#goldGradient)"/>
+                    <circle cx="38" cy="46" r="2" fill="url(#goldGradient)"/>
+                    <circle cx="50" cy="23" r="2" fill="url(#goldGradient)"/>
+                    <circle cx="62" cy="46" r="2" fill="url(#goldGradient)"/>
+                    <circle cx="75" cy="33" r="2" fill="url(#goldGradient)"/>
+                    <line x1="30" y1="64" x2="70" y2="64" stroke="url(#goldGradient)" stroke-width="2"/>
+                </svg>
+            </div>
+            <p>© Rei do Forro PVC Itajaí – Todos os direitos reservados.</p>
+            <p>Responsável Técnico: Adriel Guimarães | WhatsApp: <a href="https://wa.me/5547991169719">(47) 99116-9719</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

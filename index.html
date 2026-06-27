@@ -498,7 +498,8 @@
     </section>
 
 
-<section class="google-reviews-section">
+<!-- Início da Seção de Avaliações do Google (Versão Dark & Gold) -->
+<section class="google-reviews-section-dark">
   <div class="reviews-container">
     
     <div class="reviews-header">
@@ -509,7 +510,8 @@
     </div>
 
     <div class="reviews-grid">
-      <div class="review-card">
+      <!-- Avaliação 1 -->
+      <div class="review-card-dark">
         <div class="review-meta">
           <span class="reviewer-name">Carlos Silva</span>
           <span class="review-stars">★★★★★</span>
@@ -517,7 +519,8 @@
         <p class="review-text">"Trabalho impecável na instalação do forro da minha sala. Acabamento perfeito e entrega super rápida. Recomendo muito!"</p>
       </div>
 
-      <div class="review-card">
+      <!-- Avaliação 2 -->
+      <div class="review-card-dark">
         <div class="review-meta">
           <span class="reviewer-name">Mariana Costa</span>
           <span class="review-stars">★★★★★</span>
@@ -525,7 +528,8 @@
         <p class="review-text">"Excelente atendimento desde o primeiro contato. O material é de altíssima qualidade e o preço foi muito justo."</p>
       </div>
 
-      <div class="review-card">
+      <!-- Avaliação 3 -->
+      <div class="review-card-dark">
         <div class="review-meta">
           <span class="reviewer-name">Roberto Almeida</span>
           <span class="review-stars">★★★★★</span>
@@ -533,7 +537,8 @@
         <p class="review-text">"Profissionais muito caprichosos e limpos. Não deixaram nenhuma sujeira e o forro ficou retinho, sem nenhuma imperfeição."</p>
       </div>
 
-      <div class="review-card">
+      <!-- Avaliação 4 -->
+      <div class="review-card-dark">
         <div class="review-meta">
           <span class="reviewer-name">Juliana Mendes</span>
           <span class="review-stars">★★★★★</span>
@@ -541,7 +546,8 @@
         <p class="review-text">"Nota 10! Cumpriram rigorosamente o prazo combinado e o resultado na minha loja superou as expectativas."</p>
       </div>
 
-      <div class="review-card">
+      <!-- Avaliação 5 -->
+      <div class="review-card-dark">
         <div class="review-meta">
           <span class="reviewer-name">Marcos Souza</span>
           <span class="review-stars">★★★★★</span>
@@ -551,7 +557,7 @@
     </div>
 
     <div class="reviews-footer">
-      <a href="https://www.google.com/search?kgmid=/g/11z8msdcz7&hl=pt-BR&q=Rei+do+Forro+PVC" target="_blank" class="google-profile-btn">
+      <a href="https://www.google.com/search?kgmid=/g/11z8msdcz7&hl=pt-BR&q=Rei+do+Forro+PVC" target="_blank" class="gold-profile-btn">
         Ver perfil completo no Google
       </a>
     </div>
@@ -560,10 +566,10 @@
 </section>
 
 <style>
-  /* Estilos da Seção de Avaliações */
-  .google-reviews-section {
-    background-color: #000000; /* Fundo totalmente branco para contrastar com seu site preto */
-    color: #1a1a1a; /* Texto escuro para leitura perfeita */
+  /* Estilos da Seção de Avaliações - Versão Escura */
+  .google-reviews-section-dark {
+    background-color: #0b0b0b; /* Fundo preto profundo */
+    color: #ffffff; /* Texto branco para contraste */
     padding: 60px 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -580,18 +586,19 @@
 
   .reviews-header h2 {
     font-size: 28px;
-    color: #111111;
+    color: #ffffff;
     margin-bottom: 10px;
     font-weight: 700;
+    letter-spacing: 0.5px;
   }
 
   .rating-summary {
     font-size: 16px;
-    color: #555555;
+    color: #aaaaaa;
   }
 
   .rating-summary .stars {
-    color: #fbbc05; /* Cor amarela oficial das estrelas do Google */
+    color: #d4af37; /* Dourado metálico suave */
     font-size: 20px;
   }
 
@@ -600,36 +607,36 @@
     margin: 0 -10px;
   }
 
-  /* Criação do carrossel/lista corrida rápida e leve */
-  .review-card {
-    background: #f9f9f9;
-    border: 1px solid #eeeeee;
+  /* Cards com fundo grafite escuro para destacar do fundo preto */
+  .review-card-dark {
+    background: #141414;
+    border: 1px solid #222222;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
 
   .review-meta {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   .reviewer-name {
     font-weight: 600;
-    color: #222222;
+    color: #ffffff;
     display: block;
     font-size: 16px;
   }
 
   .review-stars {
-    color: #fbbc05;
-    font-size: 16px;
+    color: #d4af37; /* Estrelas douradas dentro do card */
+    font-size: 14px;
   }
 
   .review-text {
     font-size: 14px;
     line-height: 1.6;
-    color: #444444;
+    color: #cccccc;
     margin: 0;
     font-style: italic;
   }
@@ -639,39 +646,43 @@
     margin-top: 40px;
   }
 
-  /* Estilo do Botão do Perfil do Google */
-  .google-profile-btn {
+  /* Botão Premium Dourado */
+  .gold-profile-btn {
     display: inline-block;
-    background-color: #1a73e8; /* Azul oficial do Google */
-    color: #ffffff !important;
+    background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); /* Degradê dourado rico */
+    color: #000000 !important; /* Texto preto para legibilidade máxima sobre o dourado */
     text-decoration: none;
-    padding: 12px 28px;
-    font-weight: 600;
+    padding: 14px 32px;
+    font-weight: 700;
     font-size: 15px;
     border-radius: 50px;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-    box-shadow: 0 2px 6px rgba(26, 115, 232, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
   }
 
-  .google-profile-btn:hover {
-    background-color: #1557b0;
+  .gold-profile-btn:hover {
+    background: linear-gradient(135deg, #e5c158 0%, #c5991a 100%);
     transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
   }
 
-  /* Responsividade simples para computadores/tablets */
+  /* Responsividade para telas maiores */
   @media (min-width: 768px) {
     .reviews-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
-    .review-card {
+    .review-card-dark {
       flex: 1 1 calc(33.333% - 20px);
       margin: 10px;
       max-width: calc(33.333% - 20px);
     }
   }
 </style>
+<!-- Fim da Seção de Avaliações do Google -->
 
 
 

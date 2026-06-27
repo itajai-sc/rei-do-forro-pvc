@@ -499,6 +499,7 @@
 
 
 <!-- Início da Seção de Avaliações do Google (Versão Dark & Gold) -->
+<!-- Início da Seção de Avaliações do Google (Versão Lado a Lado) -->
 <section class="google-reviews-section-dark">
   <div class="reviews-container">
     
@@ -509,7 +510,7 @@
       </p>
     </div>
 
-    <div class="reviews-grid">
+    <div class="reviews-grid-horizontal">
       <!-- Avaliação 1 -->
       <div class="review-card-dark">
         <div class="review-meta">
@@ -534,7 +535,7 @@
           <span class="reviewer-name">Roberto Almeida</span>
           <span class="review-stars">★★★★★</span>
         </div>
-        <p class="review-text">"Profissionais muito caprichosos e limpos. Não deixaram nenhuma sujeira e o forro ficou retinho, sem nenhuma imperfeição."</p>
+        <p class="review-text">"Profissionais muito caprichosos e limpos. Não deixaram nenhuma sujeira e o forro ficou retinho."</p>
       </div>
 
       <!-- Avaliação 4 -->
@@ -566,16 +567,16 @@
 </section>
 
 <style>
-  /* Estilos da Seção de Avaliações - Versão Escura */
+  /* Estilos da Seção de Avaliações - Versão Escura e Alinhada */
   .google-reviews-section-dark {
-    background-color: #0b0b0b; /* Fundo preto profundo */
-    color: #ffffff; /* Texto branco para contraste */
+    background-color: #0b0b0b;
+    color: #ffffff;
     padding: 60px 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: inherit; /* Herda a fonte do seu site */
   }
 
   .reviews-container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -590,31 +591,37 @@
     margin-bottom: 10px;
     font-weight: 700;
     letter-spacing: 0.5px;
+    font-family: inherit;
   }
 
   .rating-summary {
     font-size: 16px;
     color: #aaaaaa;
+    font-family: inherit;
   }
 
   .rating-summary .stars {
-    color: #d4af37; /* Dourado metálico suave */
+    color: #d4af37;
     font-size: 20px;
   }
 
-  .reviews-grid {
-    display: block;
-    margin: 0 -10px;
+  /* Grid configurado para alinhar os 5 lado a lado em telas grandes */
+  .reviews-grid-horizontal {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
-  /* Cards com fundo grafite escuro para destacar do fundo preto */
+  /* Cards verticais, mais estreitos e altos */
   .review-card-dark {
     background: #141414;
     border: 1px solid #222222;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .review-meta {
@@ -626,10 +633,11 @@
     color: #ffffff;
     display: block;
     font-size: 16px;
+    font-family: inherit;
   }
 
   .review-stars {
-    color: #d4af37; /* Estrelas douradas dentro do card */
+    color: #d4af37;
     font-size: 14px;
   }
 
@@ -639,6 +647,7 @@
     color: #cccccc;
     margin: 0;
     font-style: italic;
+    font-family: inherit;
   }
 
   .reviews-footer {
@@ -649,8 +658,8 @@
   /* Botão Premium Dourado */
   .gold-profile-btn {
     display: inline-block;
-    background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%); /* Degradê dourado rico */
-    color: #000000 !important; /* Texto preto para legibilidade máxima sobre o dourado */
+    background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
+    color: #000000 !important;
     text-decoration: none;
     padding: 14px 32px;
     font-weight: 700;
@@ -660,6 +669,7 @@
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+    font-family: inherit;
   }
 
   .gold-profile-btn:hover {
@@ -668,20 +678,19 @@
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
   }
 
-  /* Responsividade para telas maiores */
-  @media (min-width: 768px) {
-    .reviews-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+  /* Aplica o efeito lado a lado (5 colunas) apenas em telas de PC/Tablet */
+  @media (min-width: 992px) {
+    .reviews-grid-horizontal {
+      flex-direction: row;
+      justify-content: space-between;
     }
     .review-card-dark {
-      flex: 1 1 calc(33.333% - 20px);
-      margin: 10px;
-      max-width: calc(33.333% - 20px);
+      flex: 1; /* Distribui os 5 igualmente */
+      min-height: 220px; /* Garante que fiquem altos mesmo com texto curto */
     }
   }
 </style>
+<!-- Fim da Seção de Avaliações do Google -->
 <!-- Fim da Seção de Avaliações do Google -->
 
 

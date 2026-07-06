@@ -6,6 +6,11 @@
     <title>Rei do Forro PVC Itajaí | Adriel Guimarães</title>
     <meta name="description" content="Venda, instalação e conserto de forros de PVC em Itajaí, Navegantes e região. Serviço limpo, rápido e com preço justo. Orçamento gratuito.">
     
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.reidoforropvcitajai.com.br/"> <meta property="og:title" content="Rei do Forro PVC Itajaí | Adriel Guimarães">
+    <meta property="og:description" content="Venda, instalação e conserto de forro de PVC com preço justo e agilidade. Peça seu orçamento gratuito!">
+    <meta property="og:image" content="img-4x5-rei-do-forro-pvc-itajai-oficial-2026.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
@@ -42,7 +47,7 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3 {
+        h1, h2, h3, h4 {
             font-family: 'Outfit', sans-serif;
             font-weight: 900;
         }
@@ -162,6 +167,13 @@
             filter: brightness(1.1);
         }
 
+        .cta-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
         /* Card Lateral de Diferencial Real */
         .floating-badge {
             background: rgba(22, 22, 26, 0.8);
@@ -265,15 +277,20 @@
         }
 
         /* Estilo da Imagem na seção Sobre */
+        .about-image {
+            display: flex;
+            justify-content: center;
+        }
+
         .about-image img {
-            width: 70%;
+            width: 100%;
+            max-width: 400px;
             height: auto;
             border-radius: 12px;
             border: 1px solid var(--border);
             box-shadow: 0 15px 30px rgba(0,0,0,0.4);
             object-fit: cover;
             aspect-ratio: 4/5;
-            align-items: center;  
         }
 
         .about-content p {
@@ -303,6 +320,108 @@
             color: var(--text-light);
             font-size: 0.85rem;
             text-transform: uppercase;
+        }
+
+        /* Estilos da Seção de Avaliações */
+        .google-reviews-section-dark {
+            background-color: #0b0b0b;
+            color: #ffffff;
+            padding: 80px 20px;
+        }
+
+        .reviews-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .reviews-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .reviews-header h2 {
+            font-size: 32px;
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .rating-summary {
+            font-size: 16px;
+            color: #aaaaaa;
+        }
+
+        .rating-summary .stars {
+            color: #d4af37;
+            font-size: 20px;
+        }
+
+        .reviews-grid-horizontal {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .review-card-dark {
+            background: #141414;
+            border: 1px solid #222222;
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .review-meta {
+            margin-bottom: 12px;
+        }
+
+        .reviewer-name {
+            font-weight: 600;
+            color: #ffffff;
+            display: block;
+            font-size: 16px;
+        }
+
+        .review-stars {
+            color: #d4af37;
+            font-size: 14px;
+        }
+
+        .review-text {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #cccccc;
+            margin: 0;
+            font-style: italic;
+        }
+
+        .reviews-footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .gold-profile-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
+            color: #000000 !important;
+            text-decoration: none;
+            padding: 14px 32px;
+            font-weight: 700;
+            font-size: 15px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        }
+
+        .gold-profile-btn:hover {
+            background: linear-gradient(135deg, #e5c158 0%, #c5991a 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
         }
 
         /* Perguntas Frequentes */
@@ -371,6 +490,21 @@
         }
 
         /* Responsivo */
+        @media (min-width: 768px) {
+            .reviews-grid-horizontal {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .reviews-grid-horizontal {
+                grid-template-columns: repeat(5, 1fr);
+            }
+            .review-card-dark {
+                min-height: 240px;
+            }
+        }
+
         @media (max-width: 968px) {
             .hero { padding: 40px 0; }
             .hero-grid { grid-template-columns: 1fr; gap: 32px; }
@@ -378,12 +512,13 @@
             .hero-main-content { align-items: center; text-align: center; }
             .about-grid { grid-template-columns: 1fr; gap: 40px; }
             .hero h1 { font-size: 2.8rem; }
-            .about-image { order: -1; } /* Faz a imagem ficar em cima do texto no celular */
+            .about-image { order: -1; }
         }
 
         @media (max-width: 568px) {
             .hero h1 { font-size: 2.2rem; }
             .section-title h2 { font-size: 1.8rem; }
+            .reviews-header h2 { font-size: 24px; }
             .brand-logo { width: 110px; height: 110px; }
         }
     </style>
@@ -432,7 +567,7 @@
                 <div class="hero-visual">
                     <div class="floating-badge">
                         <h3>O meu diferencial:</h3>
-                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6;">"Como tenho boa experiência trabalhando com obras como pedreiro, se o seu teto estiver com alguma goteira, infiltração simples, eu mesmo já resolvo antes de colocar o forro de PVC. Você economiza e não precisa chamar outro profissional. E se for um problema estrutural mais complexo, já te passo orçamento na hora."</p>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6;">"Como tenho boa experiência trabalhando com obras como pedreiro, se o seu teto estiver com alguma goteira, infiltração simples, eu mesmo já resolvo antes de colocar o forro de PVC. Você economiza e não precisa chamar outro profissional. E se for um problemão estrutural mais complexo, já te passo o orçamento na hora."</p>
                     </div>
                 </div>
 
@@ -470,7 +605,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="img-4x5-rei-do-forro-pvc-itajai-oficial-2026.png" alt="2 Profissional instalando forro">
+                    <img src="img-4x5-rei-do-forro-pvc-itajai-oficial-2026.png" alt="Profissional instalando forro de PVC em Itajaí">
                 </div>
 
                 <div class="about-content">
@@ -497,205 +632,67 @@
         </div>
     </section>
 
+    <section class="google-reviews-section-dark">
+        <div class="reviews-container">
+            
+            <div class="reviews-header">
+                <h2>O que dizem nossos clientes no Google</h2>
+                <p class="rating-summary">
+                    <span class="stars">★★★★★</span> 5.0 de 5 estrelas baseado em avaliações reais
+                </p>
+            </div>
 
-<!-- Início da Seção de Avaliações do Google (Versão Dark & Gold) -->
-<!-- Início da Seção de Avaliações do Google (Versão Lado a Lado) -->
-<section class="google-reviews-section-dark">
-  <div class="reviews-container">
-    
-    <div class="reviews-header">
-      <h2>O que dizem nossos clientes no Google</h2>
-      <p class="rating-summary">
-        <span class="stars">★★★★★</span> 5.0 de 5 estrelas baseado em avaliações reais
-      </p>
-    </div>
+            <div class="reviews-grid-horizontal">
+                <div class="review-card-dark">
+                    <div class="review-meta">
+                        <span class="reviewer-name">Carlos Silva</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">"Trabalho impecável na instalação do forro da minha sala. Acabamento perfeito e entrega super rápida. Recomendo muito!"</p>
+                </div>
 
-    <div class="reviews-grid-horizontal">
-      <!-- Avaliação 1 -->
-      <div class="review-card-dark">
-        <div class="review-meta">
-          <span class="reviewer-name">Carlos Silva</span>
-          <span class="review-stars">★★★★★</span>
+                <div class="review-card-dark">
+                    <div class="review-meta">
+                        <span class="reviewer-name">Mariana Costa</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">"Excelente atendimento desde o primeiro contato. O material é de altíssima qualidade e o preço foi muito justo."</p>
+                </div>
+
+                <div class="review-card-dark">
+                    <div class="review-meta">
+                        <span class="reviewer-name">Roberto Almeida</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">"Profissionais muito caprichosos e limpos. Não deixaram nenhuma sujeira e o forro ficou retinho."</p>
+                </div>
+
+                <div class="review-card-dark">
+                    <div class="review-meta">
+                        <span class="reviewer-name">Juliana Mendes</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">"Nota 10! Cumpriram rigorosamente o prazo combinado e o resultado na minha loja superou as expectativas."</p>
+                </div>
+
+                <div class="review-card-dark">
+                    <div class="review-meta">
+                        <span class="reviewer-name">Marcos Souza</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <p class="review-text">"Melhor opção de forro PVC em Itajaí. O acabamento nos cantos ficou perfeito. Empresa de total confiança."</p>
+                </div>
+            </div>
+
+            <div class="reviews-footer">
+                <a href="https://www.google.com/search?kgmid=/g/11z8msdcz7&hl=pt-BR&q=Rei+do+Forro+PVC" target="_blank" class="gold-profile-btn">
+                    Ver perfil completo no Google
+                </a>
+            </div>
+
         </div>
-        <p class="review-text">"Trabalho impecável na instalação do forro da minha sala. Acabamento perfeito e entrega super rápida. Recomendo muito!"</p>
-      </div>
+    </section>
 
-      <!-- Avaliação 2 -->
-      <div class="review-card-dark">
-        <div class="review-meta">
-          <span class="reviewer-name">Mariana Costa</span>
-          <span class="review-stars">★★★★★</span>
-        </div>
-        <p class="review-text">"Excelente atendimento desde o primeiro contato. O material é de altíssima qualidade e o preço foi muito justo."</p>
-      </div>
-
-      <!-- Avaliação 3 -->
-      <div class="review-card-dark">
-        <div class="review-meta">
-          <span class="reviewer-name">Roberto Almeida</span>
-          <span class="review-stars">★★★★★</span>
-        </div>
-        <p class="review-text">"Profissionais muito caprichosos e limpos. Não deixaram nenhuma sujeira e o forro ficou retinho."</p>
-      </div>
-
-      <!-- Avaliação 4 -->
-      <div class="review-card-dark">
-        <div class="review-meta">
-          <span class="reviewer-name">Juliana Mendes</span>
-          <span class="review-stars">★★★★★</span>
-        </div>
-        <p class="review-text">"Nota 10! Cumpriram rigorosamente o prazo combinado e o resultado na minha loja superou as expectativas."</p>
-      </div>
-
-      <!-- Avaliação 5 -->
-      <div class="review-card-dark">
-        <div class="review-meta">
-          <span class="reviewer-name">Marcos Souza</span>
-          <span class="review-stars">★★★★★</span>
-        </div>
-        <p class="review-text">"Melhor opção de forro PVC em Itajaí. O acabamento nos cantos ficou perfeito. Empresa de total confiança."</p>
-      </div>
-    </div>
-
-    <div class="reviews-footer">
-      <a href="https://www.google.com/search?kgmid=/g/11z8msdcz7&hl=pt-BR&q=Rei+do+Forro+PVC" target="_blank" class="gold-profile-btn">
-        Ver perfil completo no Google
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<style>
-  /* Estilos da Seção de Avaliações - Versão Escura e Alinhada */
-  .google-reviews-section-dark {
-    background-color: #0b0b0b;
-    color: #ffffff;
-    padding: 60px 20px;
-    font-family: inherit; /* Herda a fonte do seu site */
-  }
-
-  .reviews-container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .reviews-header {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .reviews-header h2 {
-    font-size: 28px;
-    color: #ffffff;
-    margin-bottom: 10px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    font-family: inherit;
-  }
-
-  .rating-summary {
-    font-size: 16px;
-    color: #aaaaaa;
-    font-family: inherit;
-  }
-
-  .rating-summary .stars {
-    color: #d4af37;
-    font-size: 20px;
-  }
-
-  /* Grid configurado para alinhar os 5 lado a lado em telas grandes */
-  .reviews-grid-horizontal {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  /* Cards verticais, mais estreitos e altos */
-  .review-card-dark {
-    background: #141414;
-    border: 1px solid #222222;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
-  .review-meta {
-    margin-bottom: 12px;
-  }
-
-  .reviewer-name {
-    font-weight: 600;
-    color: #ffffff;
-    display: block;
-    font-size: 16px;
-    font-family: inherit;
-  }
-
-  .review-stars {
-    color: #d4af37;
-    font-size: 14px;
-  }
-
-  .review-text {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #cccccc;
-    margin: 0;
-    font-style: italic;
-    font-family: inherit;
-  }
-
-  .reviews-footer {
-    text-align: center;
-    margin-top: 40px;
-  }
-
-  /* Botão Premium Dourado */
-  .gold-profile-btn {
-    display: inline-block;
-    background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
-    color: #000000 !important;
-    text-decoration: none;
-    padding: 14px 32px;
-    font-weight: 700;
-    font-size: 15px;
-    border-radius: 50px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
-    font-family: inherit;
-  }
-
-  .gold-profile-btn:hover {
-    background: linear-gradient(135deg, #e5c158 0%, #c5991a 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
-  }
-
-  /* Aplica o efeito lado a lado (5 colunas) apenas em telas de PC/Tablet */
-  @media (min-width: 992px) {
-    .reviews-grid-horizontal {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    .review-card-dark {
-      flex: 1; /* Distribui os 5 igualmente */
-      min-height: 220px; /* Garante que fiquem altos mesmo com texto curto */
-    }
-  }
-</style>
-<!-- Fim da Seção de Avaliações do Google -->
-<!-- Fim da Seção de Avaliações do Google -->
-
-
-
-    
     <section id="faq">
         <div class="container">
             <div class="section-title" style="text-align: center; margin: 0 auto 50px;">
@@ -716,24 +713,32 @@
                     <p>Sim. Só trabalho com lâminas de PVC que não propagam fogo (autoextinguível) e que são fáceis de limpar no dia a dia.</p>
                 </details>
             </div>
-                <br/><center><a href="https://wa.me/5547991169719?text=Olá%20Adriel!%20venho%20do%20site.%20Quero%20fazer%20um%20orçamento%20de%20forro%20de%20PVC." class="cta-button" target="_blank">Solicitar Orçamento Grátis</a></center>
-
+            
+            <div class="cta-wrapper">
+                <a href="https://wa.me/5547991169719?text=Olá%20Adriel!%20venho%20do%20site.%20Quero%20fazer%20um%20orçamento%20de%20forro%20de%20PVC." class="cta-button" target="_blank">Solicitar Orçamento Grátis</a>
+            </div>
         </div>
-
     </section>
 
     <footer>
         <div class="container">
             <div class="brand-logo-small">
                 <svg viewBox="0 0 100 100" width="100%" height="100%">
-                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#goldGradient)" stroke-width="2.5" style="opacity: 0.4;"/>
-                    <path d="M 28 60 L 25 35 L 38 48 L 50 25 L 62 48 L 75 35 L 72 60 Z" fill="none" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linejoin="round"/>
-                    <circle cx="25" cy="33" r="2" fill="url(#goldGradient)"/>
-                    <circle cx="38" cy="46" r="2" fill="url(#goldGradient)"/>
-                    <circle cx="50" cy="23" r="2" fill="url(#goldGradient)"/>
-                    <circle cx="62" cy="46" r="2" fill="url(#goldGradient)"/>
-                    <circle cx="75" cy="33" r="2" fill="url(#goldGradient)"/>
-                    <line x1="30" y1="64" x2="70" y2="64" stroke="url(#goldGradient)" stroke-width="2"/>
+                    <defs>
+                        <linearGradient id="goldGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#F3E5AB" />
+                            <stop offset="50%" stop-color="#D4AF37" />
+                            <stop offset="100%" stop-color="#AA7C11" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#goldGradientFooter)" stroke-width="2.5" style="opacity: 0.4;"/>
+                    <path d="M 28 60 L 25 35 L 38 48 L 50 25 L 62 48 L 75 35 L 72 60 Z" fill="none" stroke="url(#goldGradientFooter)" stroke-width="2.5" stroke-linejoin="round"/>
+                    <circle cx="25" cy="33" r="2" fill="url(#goldGradientFooter)"/>
+                    <circle cx="38" cy="46" r="2" fill="url(#goldGradientFooter)"/>
+                    <circle cx="50" cy="23" r="2" fill="url(#goldGradientFooter)"/>
+                    <circle cx="62" cy="46" r="2" fill="url(#goldGradientFooter)"/>
+                    <circle cx="75" cy="33" r="2" fill="url(#goldGradientFooter)"/>
+                    <line x1="30" y1="64" x2="70" y2="64" stroke="url(#goldGradientFooter)" stroke-width="2"/>
                 </svg>
             </div>
             <p>© Rei do Forro PVC Itajaí – Todos os direitos reservados.</p>
